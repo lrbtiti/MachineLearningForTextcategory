@@ -1,0 +1,31 @@
+language: python
+sudo: required
+dist: trusty
+env:
+  global:
+    -JYTHON=false
+before_install:
+  export INTERPRETER=python;
+install:
+  - pip install -r requirements.cfg
+matrix:
+  include:
+    - python: "2.7"
+      env:
+        - ROBOTFRAMEWORK=3.0.4
+        - PARAMIKO=2.4.1
+    - python: "2.7"
+      env:
+        - JYTHON=true
+        - ROBOTFRAMEWORK=3.0.4
+
+before_script:
+  - pip install robotframework==$ROBOTFRAMEWORK
+  - pip install robotstatuschecker
+  - if [ "$JYTHON" == "true" ]; then
+        export CLASSPATH=$CLASSPATH:$TRAVIS_BUILD_DIR/lib/*;
+    else
+        pip install paramiko==$PARAMIKO;
+    fi
+script:
+- $INTERPRETER utest/run.py utest
