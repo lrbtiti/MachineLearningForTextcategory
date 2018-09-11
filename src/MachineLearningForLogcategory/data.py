@@ -16,3 +16,8 @@ class DataSet(object):
     @property
     def target(self):
         return self._data_sets.target
+
+    @property
+    def target_names(self):
+        return self._data_sets.target_names
+
