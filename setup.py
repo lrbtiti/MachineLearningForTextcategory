@@ -12,7 +12,7 @@ from setuptools import setup
 
 CURDIR = dirname(abspath(__file__))
 REQUIREMENTS = ['scikit-learn >= 0.19.1']
-with open(join(CURDIR, 'README.rst')) as f:
+with open(join(CURDIR, 'README.md')) as f:
     DESCRIPTION = f.read()
 CLASSIFIERS = '''
 Development Status :: 5 - Production/Stable
@@ -34,10 +34,11 @@ setup(
     author_email='liyaowang518@gmail.com',
     url='https://github.com',
     license='Apache License 2.0',
-    keywords='machine learning for dealing with logs',
+    keywords='machine learning for dealing with plain text logs',
     platforms='any',
     classifiers=CLASSIFIERS,
     install_requires = REQUIREMENTS,
     package_dir={'':'src'},
-    packages=['MachineLearningForLogcategory']
+    packages=['MachineLearningForLogcategory'],
+    scripts=["src/scripts/predict.py"]
 )
