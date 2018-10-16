@@ -37,7 +37,7 @@ class SVC_Model(BaseModel):
 @click.option('--model_save_path', default="train.ml", help='the train model save path.')
 def build_model(train_path, model_save_path):
     train_datas = DataSet(train_path)
-    train_model = SVC_Model(train_datas.data, train_datas.target, train_datas.category_names)
+    train_model = SVC_Model(train_datas.data, train_datas.category_ids, train_datas.category_names)
     train_model.build_with_category_names(model_save_path)
 
 

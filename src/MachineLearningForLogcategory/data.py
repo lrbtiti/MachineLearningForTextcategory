@@ -14,10 +14,14 @@ class DataSet(object):
         return self._data_sets.data
 
     @property
-    def target(self):
+    def category_ids(self):
         return self._data_sets.target
 
     @property
-    def target_names(self):
+    def category_names(self):
         return self._data_sets.target_names
+
+    @property
+    def file_names(self):
+        return self._data_sets.filenames
 
