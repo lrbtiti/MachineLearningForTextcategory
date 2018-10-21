@@ -11,9 +11,9 @@ Requirements
 * pip >= 1.5
 
 
-NON UTE testline installation
+installation
 =============================
 
-| pip install -U -i http:// pip
+| pip install -U MachineLearningForLogcategory
 
 
