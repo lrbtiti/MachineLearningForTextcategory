@@ -27,12 +27,12 @@ Framework :: Robot Framework :: Library
 
 setup(
     name='MachineLearningForLogcategory',
-    version='1.0.0',
+    version='1.1.0',
     description='Robot Framework test library Files Operation',
     long_description=DESCRIPTION,
     author='leo',
     author_email='liyaowang518@gmail.com',
-    url='https://github.com',
+    url='https://github.com/wangliyao518/MachineLearningForLogcategory.git',
     license='Apache License 2.0',
     keywords='machine learning for dealing with plain text logs',
     platforms='any',
@@ -40,5 +40,5 @@ setup(
     install_requires = REQUIREMENTS,
     package_dir={'':'src'},
     packages=['MachineLearningForLogcategory'],
-    scripts=["src/scripts/predict.py"]
+    scripts=["src/scripts/smart_learn.py"]
 )
