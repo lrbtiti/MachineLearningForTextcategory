@@ -3,9 +3,9 @@
 import click
 import tempfile, os
 from sklearn.externals import joblib
-from MachineLearningForLogcategory.data import DataSet, PredictionDateSet, lableInFileDateSet
-from MachineLearningForLogcategory.model import SVC_Model
-from MachineLearningForLogcategory.logger import LOG
+from MachineLearningForTextcategory.data import DataSet, PredictionDateSet, lableInFileDateSet
+from MachineLearningForTextcategory.model import SVC_Model
+from MachineLearningForTextcategory.logger import LOG
 
 
 @click.group()

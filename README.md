@@ -1,7 +1,7 @@
-machine learning for category logs
+machine learning for category text file
 ==================
 
-this library used for deal with logs and category it by automation
+this library used for deal with text and category it by automation
 
 Requirements
 ============
@@ -14,6 +14,6 @@ Requirements
 installation
 =============================
 
-| pip install -U MachineLearningForLogcategory
+| pip install -U MachineLearningForTextcategory
 
 

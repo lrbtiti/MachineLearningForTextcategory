@@ -20,25 +20,23 @@ License :: OSI Approved :: Apache Software License
 Operating System :: OS Independent
 Programming Language :: Python
 Programming Language :: Python :: 2.7
-Topic :: Software Development :: Testing
-Framework :: Robot Framework
-Framework :: Robot Framework :: Library
+Topic :: Software Development :: Machine Learing
 '''.strip().splitlines()
 
 setup(
-    name='MachineLearningForLogcategory',
-    version='1.1.0',
-    description='Robot Framework test library Files Operation',
+    name='MachineLearningForTextcategory',
+    version='1.0.0',
+    description='Machine learning for text category',
     long_description=DESCRIPTION,
     author='leo',
     author_email='liyaowang518@gmail.com',
-    url='https://github.com/wangliyao518/MachineLearningForLogcategory.git',
+    url='https://github.com/',
     license='Apache License 2.0',
     keywords='machine learning for dealing with plain text logs',
     platforms='any',
     classifiers=CLASSIFIERS,
     install_requires = REQUIREMENTS,
     package_dir={'':'src'},
-    packages=['MachineLearningForLogcategory'],
+    packages=['MachineLearningForTextcategory'],
     scripts=["src/scripts/smart_learn.py"]
 )
